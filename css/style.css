@@ -1,28 +1,35 @@
 body {
     display: grid;
     grid-template-areas: 
-    "hd hd"
-    "sc sc"
-    "mn mn"
-    "ft ft"
+    "hd"
+    "sc"
+    "ed"
+    "mn"
+    "ft"
     ;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 100px 300px auto 200px;
-    gap:10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px  300px 5px  auto 200px;
+    /* gap:10px;     */
+    margin: 0px;
     /* background-color: #2196F3; */
 
-    grid-area: sc;
+    
     background-image:url("../img/ocean.jpg");
     background-repeat: no-repeat;
     background-size:cover;
+
+
 }
 
 
-
+#edge {
+    grid-area: ed;
+    background-color: rgba(57, 194, 240, 0.9);
+}
 header {
     grid-area: hd;
     /* background-color: #2196F3; */
-    background-color: rgba(57, 194, 240, 0.9);
+    background-color: rgba(57, 194, 240, 0.95);
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -56,7 +63,7 @@ nav {
 
 section {
     grid-area: sc;
-    background-image:url("../img/ocean.jpg");
+    background-image:url("../img/nxtadv.png");
     background-repeat: no-repeat;
     background-size:cover;
 }
@@ -64,7 +71,7 @@ section {
 main {
     grid-area: mn;
     background-color: rgba(57, 194, 240, 0.2);
-    border-radius: 15px;
+    /* border-radius: 15px; */
     
     display: flex;
     flex-direction:row;
@@ -89,17 +96,25 @@ aside {
     height: 300px;
     border-radius: 20px;
     padding: 5px;
-    
+
+    overflow:hidden;
+
+    transition: width 2s, height 2s;
+    transition-delay: 0.2s;
+
 }
 
 aside:hover {
-    animation: expand 2s;
+
+    width: 500px;
+    height: 700px;
+
 }
 aside img {
     object-fit: cover;
     border-radius: 20px;
     width: 100%;
-    height: 175px;
+    height: 58%;
     
     
 }
@@ -112,14 +127,11 @@ aside img {
   text-decoration: none;
 }
 
-@keyframes expand {
-    from {
-        height: 300px;
-        /* width: 35; */
-    }
-    to {
-        height: 500px;
-        width: 500px;
+.descfont {
+
+    color:black;
+    font-family: "Galindo", sans-serif;
+    font-weight: 400;
+    margin: 5px;
     
-    }
 }
