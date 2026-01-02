@@ -1,23 +1,19 @@
 body {
     display: grid;
     grid-template-areas: 
-    /* "rd" */
     "hd"
-    /* "dd" */
-    /* "sc" */
     "ed"
     "mn"
     "ft"
     ;
+
     grid-template-columns: 1fr;
     grid-template-rows: 400px 5px auto min-content;
-    /* gap:10px;     */
     margin: 0px;
-    /* background-color: #2196F3; */
 
     
     background-image:url("../img/ocean.jpg");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     background-size:cover;
 
 
@@ -30,17 +26,15 @@ body {
     gap: 10px;
     padding: 5px 10px;
     border-radius: 20px;
-    box-shadow: 0 20px 80px rgba(0,0,0,0.5);
+    box-shadow: 0 20px 80px rgba(0,0,0,0.6);
 
 
 }
 
 
 #title {
-    /* margin: auto; */
     position:relative;
     z-index: 2;
-    
     top:140px;
     
     
@@ -49,16 +43,13 @@ body {
 
 }
 #titletext {
-    /* margin: auto; */
     position:relative;
     z-index: 2;
     
     top:70px;
 
-    
     min-width: 800px;
     width: 70vw;
-
 }
 
 #edge {
@@ -68,20 +59,16 @@ body {
 
 header {
     grid-area: hd;
-    /* background-color: rgba(57, 194, 240, 0.5); */
     padding: 25px;
+    
     background-image:url("../img/nxtadvv2.png");
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
     
-    /* background-color: #2196F3; */
-    
-    
     
 }
 #side {
-    /* background-color: rgba(57, 194, 240, 0.5); */
     padding: 20px;
 }
 #main {
@@ -90,14 +77,12 @@ header {
 }
 
 nav {
-    /* background-color:  ; */
     width: 70%;
 
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap:10px;
-    /* padding: 10px; */
 
 }
 
@@ -121,23 +106,20 @@ nav p {
     
 }
 
-.nmr {
+.inl {
     display: inline;
-    /* padding: 60px; */
-    /* width: 10px; */
+
 
 }
 .linkbox {
-    /* background-color: rgba(57, 194, 240, 0.2); */
-    /* margin: auto; */
+
     padding:7px;
-    /* position: relative; */
-    /* top: 12px; */
+
     border-radius: 20px;
     transition: padding 0.5s;
     transition-delay: 0.1s;
     background-color: rgba(58, 158, 180, 0.1);
-    /* border-bottom: 6px solid transparent; */
+
 }
 
 .linkbox:hover {
@@ -159,7 +141,6 @@ nav p {
 main {
     grid-area: mn;
     background-color: rgba(57, 194, 240, 0.2);
-    /* border-radius: 15px; */
     
     display: flex;
     flex-direction:row;
@@ -184,15 +165,13 @@ footer {
 aside {
     background-color: antiquewhite;
     width: 30%;
-    height: 300px;
+    height: 375px;
     border-radius: 20px;
-    padding: 5px;
+    padding: 7px;
     box-shadow: 0 15px 25px rgba(0,0,0,0.2);
 
     overflow:hidden;
     
-    
-
     transition: width 1s ease, height 2s ease, box-shadow 1s ease;
     transition-delay: 0.4s;
     
@@ -218,10 +197,18 @@ h2 {
 
 aside p {
     font-size: 0.9rem;
-    line-height: 1.4;
+    line-height: 1.6;
     opacity: 0.85;
+    
 }
 
+aside h3 {
+    font-size: 1rem;
+    line-height: 0.9;
+    margin-top: 8px;
+    opacity: 0.9;
+    text-align: center;
+}
 
 .reason {
     height: 500px;
@@ -248,18 +235,18 @@ h6 {
     font-weight: 400;
     font-style: normal;
     color:white;
-    
+    font-size: 2rem;
+
     text-align: center;
     text-decoration: none;
     text-shadow:
     -2px -2px 0 #000,
-        2px -2px 0 #000,
+    2px -2px 0 #000,
     -2px  2px 0 #000,
-        2px  2px 0 #000,
-        0px  0px 6px rgba(0,0,0,0.6);
-
-  
-  white-space: nowrap;
+    2px  2px 0 #000,
+    0px  0px 6px rgba(0,0,0,0.6);
+    
+    white-space: nowrap;
  
 }
 
@@ -268,6 +255,7 @@ h6 {
     font-weight: 400;
     font-style: normal;
     color:white;
+    font-size: 18px;
     
     text-align: center;
     text-decoration: none;
@@ -295,13 +283,6 @@ p {
 }
 
 
-aside h3 {
-    font-size: 1rem;
-    line-height: 0.9;
-    margin-top: 8px;
-    opacity: 0.9;
-    text-align: center;
-}
 
 .credit {
     font-size: 0.6rem;
