@@ -19,7 +19,7 @@ body {
 
 }
 
-#seperator {
+section {
     background-color: rgba(57, 194, 240, 0.9);
     display: flex;
     justify-content: space-between;
